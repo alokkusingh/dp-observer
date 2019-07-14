@@ -15,6 +15,7 @@ public class WeatherReporter extends Observable {
 	public void changeWeatherData() {
 		System.out.println("WeatherReporter: broadcasting weather change");
 		this.setChanged();
-		this.notifyObservers();
+		//this.notifyObservers();
+		this.notifyObservers("Temp 40 C");
 	}
 }

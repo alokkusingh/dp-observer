@@ -13,4 +13,12 @@ public class DRTeam implements Observer {
 			System.out.println("DRTeam :: weather update received");
 		}
 	}
+	
+	public void init() {
+		System.out.println("DRTeam::init");
+	}
+	
+	public void destroy() {
+		System.out.println("DRTeam::destroy");
+	}
 }

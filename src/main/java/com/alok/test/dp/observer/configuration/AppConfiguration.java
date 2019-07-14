@@ -16,7 +16,7 @@ public class AppConfiguration {
 	@Autowired
 	WeatherReporter weatherReporter;
 	
-	@Bean("drTeam")
+	@Bean(name = {"drTeam"}, initMethod = "init", destroyMethod = "destroy")
 	public Observer getDRTeamBean() {
 		Observer observer = new DRTeam();
 		
